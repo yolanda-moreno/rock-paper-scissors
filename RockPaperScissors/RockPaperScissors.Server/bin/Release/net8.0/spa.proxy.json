@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\RockPaperScissors.Server\\..\\rockpaperscissors.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

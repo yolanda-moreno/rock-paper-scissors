@@ -59,6 +59,12 @@
     margin-top: 1em;
 }
 
+.container .game-status-result {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .container .move-select-menu {
     display: grid;
     grid-template-columns: repeat(3, 100px);

@@ -8,7 +8,7 @@ import './App.css';
 function App() {
     const [playerChoice, setPlayerChoice] = useState('rock');
     const [computerChoice, setComputerChoice] = useState('rock');
-    const [result, setResult] = useState(null);
+    const [result, setResult] = useState("Let's Play!");
     const [playerWins, setPlayerWins] = useState(0);
     const [computerWins, setComputerWins] = useState(0);
     const [showResetButton, setShowResetButton] = useState(false);
@@ -67,6 +67,7 @@ function App() {
                 setShowResetButton(false);
                 setChoicesDisabled(false);
                 setBodyFilter('none');
+                setResult("Let's Play!");
             } else {
                 console.error('Error al restablecer el juego.');
             }
@@ -78,7 +79,9 @@ function App() {
     return (
         <>
         <h1>Rock,<br/> Paper,<br/> Scissors!</h1>
-        <div className="container">
+            <div className="container">
+                <p className="game-status-result">{result}</p>
+
             {playerWins === 3 && <Confetti />} {/* Mostrar confeti si el jugador alcanza 3 victorias */}
             <div className="result-container">
                 <div className="user-result-element result-move">
@@ -91,8 +94,8 @@ function App() {
                 </div>
             </div>
 
-                {playerWins === 3 && <p className="game-status-element">You've won!😄</p>}
-                {computerWins === 3 && <p className="game-status-element">You've' lost!😫</p>}
+                {playerWins === 3 && <p className="game-status-element">You've won!</p>}
+                {computerWins === 3 && <p className="game-status-element">You've lost!</p>}
 
             <div className="move-select-menu">
                 {choices.map(({ type, img }) => (
