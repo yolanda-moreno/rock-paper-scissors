@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|c:\\users\\yoli_\\source\\repos\\rockpaperscissors\\rockpaperscissors.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|solutionrelative:rockpaperscissors.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|c:\\users\\yoli_\\source\\repos\\rockpaperscissors\\rockpaperscissors.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|solutionrelative:rockpaperscissors.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D761D48-B99A-4B24-A42E-F6A14EA6532B}|RockPaperScissors.Server\\RockPaperScissors.Server.csproj|c:\\users\\yoli_\\source\\repos\\rockpaperscissors\\rockpaperscissors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D761D48-B99A-4B24-A42E-F6A14EA6532B}|RockPaperScissors.Server\\RockPaperScissors.Server.csproj|solutionrelative:rockpaperscissors.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|c:\\users\\yoli_\\source\\repos\\rockpaperscissors\\rockpaperscissors.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|solutionrelative:rockpaperscissors.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F23B934-2333-4D9C-BE74-586A8B4BF010}|rockpaperscissors.client\\rockpaperscissors.client.esproj|c:\\users\\yoli_\\source\\repos\\rockpaperscissors\\rockpaperscissors.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\src\\App.css",
               "RelativeDocumentMoniker": "rockpaperscissors.client\\src\\App.css",
               "ToolTip": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\src\\App.css",
               "RelativeToolTip": "rockpaperscissors.client\\src\\App.css",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC0AAAAgAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAHkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-02-27T08:54:06.865Z",
               "EditorCaption": ""
@@ -67,12 +67,11 @@
               "RelativeToolTip": "rockpaperscissors.client\\src\\index.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-27T08:55:28.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-27T08:55:28.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\RockPaperScissors.Server\\Program.cs",
               "RelativeDocumentMoniker": "RockPaperScissors.Server\\Program.cs",
@@ -85,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "rockpaperscissors.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\src\\App.jsx",
               "RelativeToolTip": "rockpaperscissors.client\\src\\App.jsx",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAEUAAAApAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAwwIIAAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-02-26T18:18:27.144Z",
               "EditorCaption": ""

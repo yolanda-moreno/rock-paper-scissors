@@ -6,19 +6,21 @@ import Confetti from 'react-confetti';
 import './App.css';
 
 function App() {
-    const [playerChoice, setPlayerChoice] = useState('rock');
-    const [computerChoice, setComputerChoice] = useState('rock');
+    const [playerChoice, setPlayerChoice] = useState('idle');
+    const [computerChoice, setComputerChoice] = useState('idle');
     const [result, setResult] = useState("Let's Play!");
     const [playerWins, setPlayerWins] = useState(0);
     const [computerWins, setComputerWins] = useState(0);
     const [showResetButton, setShowResetButton] = useState(false);
     const [choicesDisabled, setChoicesDisabled] = useState(false);
     const [bodyFilter, setBodyFilter] = useState('none');
+    const rockImageUrl = 'https://raw.githubusercontent.com/praxeds/theodinproject-rock-paper-scissors/main/assets/images/raised-fist_270a.png';
+
 
     const choices = [
         { type: 'rock', img: 'https://raw.githubusercontent.com/praxeds/theodinproject-rock-paper-scissors/main/assets/images/raised-fist_270a.png' },
         { type: 'paper', img: 'https://raw.githubusercontent.com/praxeds/theodinproject-rock-paper-scissors/main/assets/images/hand-with-fingers-splayed_1f590-fe0f.png' },
-        { type: 'scissors', img: 'https://raw.githubusercontent.com/praxeds/theodinproject-rock-paper-scissors/main/assets/images/victory-hand_270c-fe0f.png' }
+        { type: 'scissors', img: 'https://raw.githubusercontent.com/praxeds/theodinproject-rock-paper-scissors/main/assets/images/victory-hand_270c-fe0f.png' },
     ];
     useEffect(() => {
         document.body.style.filter = bodyFilter;
@@ -35,6 +37,7 @@ function App() {
             },
             body: JSON.stringify({ choice })
         });
+        
         const data = await response.json();
         setComputerChoice(data.computerChoice);
         setResult(data.result);
@@ -49,6 +52,11 @@ function App() {
             if (data.computerWins === 3) {
                 setBodyFilter('grayscale(100%)'); // Aplicar escala de grises al cuerpo si el jugador pierde
             }
+        } else {
+            setTimeout(() => {
+                setPlayerChoice('idle');
+                setComputerChoice('idle');
+            }, 1500);
         }
     };
 
@@ -68,6 +76,8 @@ function App() {
                 setChoicesDisabled(false);
                 setBodyFilter('none');
                 setResult("Let's Play!");
+                setPlayerChoice('idle');
+                setComputerChoice('idle');
             } else {
                 console.error('Error al restablecer el juego.');
             }
@@ -85,11 +95,20 @@ function App() {
                 {playerWins === 3 && <Confetti />} {/* Mostrar confeti si el jugador alcanza 3 victorias */}
                 <div className="result-container">
                     <div className="user-result-element result-move">
-                        <img src={playerChoice === 'rock' ? rockImage : (playerChoice === 'paper' ? paperImage : scissorsImage)} alt={playerChoice} />
-                        <p>YOU<br></br> {playerWins}</p>
+                        <img
+                            src={playerChoice === 'idle' ? rockImageUrl :
+                                (playerChoice === 'paper' ? paperImage :
+                                    (playerChoice === 'rock' ? rockImage : scissorsImage))}
+                            alt={playerChoice}
+                        />                        <p>YOU<br></br> {playerWins}</p>
                     </div>
                     <div className="computer-result-element result-move">
-                        <img src={computerChoice === 'rock' ? rockImage : (computerChoice === 'paper' ? paperImage : scissorsImage)} alt={computerChoice} />
+                        <img
+                            src={computerChoice === 'idle' ? rockImageUrl :
+                                (computerChoice === 'paper' ? paperImage :
+                                    (computerChoice === 'rock' ? rockImage : scissorsImage))}
+                            alt={computerChoice}
+                        />
                         <p>RIVAL<br></br> {computerWins}</p>
                     </div>
                 </div>
@@ -109,7 +128,7 @@ function App() {
                 {showResetButton && <button className="reset-btn" onClick={resetGame}>Play again</button>}
             </div>
             <footer className="footer">
-                <p>Made by <a href="https://github.com/yolanda-moreno" target="_blank">Yolanda Moreno</a></p>
+                <p>Made by <span><a href="https://github.com/yolanda-moreno" target="_blank">Yolanda Moreno</a></span></p>
             </footer>
         </>
     );

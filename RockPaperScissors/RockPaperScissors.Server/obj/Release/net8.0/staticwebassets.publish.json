@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GkvRbcMD/B9kT7bmb1ZCAsu479huFFqyp8lYWDWTWgQ=",
+  "Hash": "LYndCM2MEk29Ye3/xk8pEE0L84bt6pEtc3yTjcg0QOs=",
   "Source": "RockPaperScissors.Server",
   "BasePath": "_content/RockPaperScissors.Server",
   "Mode": "Default",
@@ -21,12 +21,12 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-DSGTT4vZ.js",
+      "Identity": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-C4shLNWU.css",
       "SourceId": "rockpaperscissors.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/index-DSGTT4vZ.js",
+      "RelativePath": "assets/index-C4shLNWU.css",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -37,15 +37,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-DSGTT4vZ.js"
+      "OriginalItemSpec": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-C4shLNWU.css"
     },
     {
-      "Identity": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-DWQnj622.css",
+      "Identity": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-Z4Q4isWq.js",
       "SourceId": "rockpaperscissors.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/index-DWQnj622.css",
+      "RelativePath": "assets/index-Z4Q4isWq.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -56,7 +56,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-DWQnj622.css"
+      "OriginalItemSpec": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\index-Z4Q4isWq.js"
     },
     {
       "Identity": "C:\\Users\\yoli_\\source\\repos\\RockPaperScissors\\rockpaperscissors.client\\dist\\assets\\paper-mqc-RWSP.png",
