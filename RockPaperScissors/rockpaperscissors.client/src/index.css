@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'Ragata';
+    src: url('assets/ragata.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #343A40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Ragata;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ADD8E6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
