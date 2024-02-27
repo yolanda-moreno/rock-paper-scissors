@@ -92,7 +92,7 @@ function App() {
             </div>
 
                 {playerWins === 3 && <p className="game-status-element">You've won!😄</p>}
-                {computerWins === 3 && <p className="game-status-element">You've' lost!😫</p>}
+                {computerWins === 3 && <p className="game-status-element">You've lost!😫</p>}
 
             <div className="move-select-menu">
                 {choices.map(({ type, img }) => (
