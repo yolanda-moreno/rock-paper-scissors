@@ -1,0 +1,6 @@
+@RockPaperScissors.Server_HostAddress = http://localhost:5196
+
+GET {{RockPaperScissors.Server_HostAddress}}/api/result
+Accept: application/json
+
+###
