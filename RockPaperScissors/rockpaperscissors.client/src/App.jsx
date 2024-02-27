@@ -78,33 +78,33 @@ function App() {
 
     return (
         <>
-        <h1>Rock,<br/> Paper,<br/> Scissors!</h1>
+            <h1>Rock,<br /> Paper,<br /> Scissors!</h1>
             <div className="container">
                 <p className="game-status-result">{result}</p>
 
-            {playerWins === 3 && <Confetti />} {/* Mostrar confeti si el jugador alcanza 3 victorias */}
-            <div className="result-container">
-                <div className="user-result-element result-move">
-                    <img src={playerChoice === 'rock' ? rockImage : (playerChoice === 'paper' ? paperImage : scissorsImage)} alt={playerChoice} />
-                    <p>YOU<br></br> {playerWins}</p>
+                {playerWins === 3 && <Confetti />} {/* Mostrar confeti si el jugador alcanza 3 victorias */}
+                <div className="result-container">
+                    <div className="user-result-element result-move">
+                        <img src={playerChoice === 'rock' ? rockImage : (playerChoice === 'paper' ? paperImage : scissorsImage)} alt={playerChoice} />
+                        <p>YOU<br></br> {playerWins}</p>
+                    </div>
+                    <div className="computer-result-element result-move">
+                        <img src={computerChoice === 'rock' ? rockImage : (computerChoice === 'paper' ? paperImage : scissorsImage)} alt={computerChoice} />
+                        <p>RIVAL<br></br> {computerWins}</p>
+                    </div>
                 </div>
-                <div className="computer-result-element result-move">
-                    <img src={computerChoice === 'rock' ? rockImage : (computerChoice === 'paper' ? paperImage : scissorsImage)} alt={computerChoice} />
-                    <p>RIVAL<br></br> {computerWins}</p>
-                </div>
-            </div>
 
                 {playerWins === 3 && <p className="game-status-element">You've won!</p>}
                 {computerWins === 3 && <p className="game-status-element">You've lost!</p>}
 
-            <div className="move-select-menu">
-                {choices.map(({ type, img }) => (
-                    <button key={type} className={`${type}-move move`} onClick={() => handlePlayerChoice(type)} disabled={choicesDisabled}>
-                        <img src={img} alt={type} className="select-move-icon" />
-                        <p className="move-select-name">{type.charAt(0).toUpperCase() + type.slice(1)}</p>
-                    </button>
-                ))}
-            </div>
+                <div className="move-select-menu">
+                    {choices.map(({ type, img }) => (
+                        <button key={type} className={`${type}-move move`} onClick={() => handlePlayerChoice(type)} disabled={choicesDisabled}>
+                            <img src={img} alt={type} className="select-move-icon" />
+                            <p className="move-select-name">{type.charAt(0).toUpperCase() + type.slice(1)}</p>
+                        </button>
+                    ))}
+                </div>
 
                 {showResetButton && <button className="reset-btn" onClick={resetGame}>Play again</button>}
             </div>
